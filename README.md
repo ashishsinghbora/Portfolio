@@ -1,7 +1,7 @@
 # Personal Website
 
 This repository contains the source code for my personal website.
-This Website is live at url:- https://ashishsinghbora.github.io/My-Personal-Website/
+This Website is live at url:- https://ashishsinghbora.github.io/Oneforall/
 
 ## Table of Contents
 
