@@ -45,7 +45,7 @@ Feel free to use this codebase as a template for your own personal website. Cust
 
 ## Contributing
 
-Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or create a pull request. 
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or create a pull  request. 
 
 Before contributing, please read the [Contribution Guidelines](CONTRIBUTING.md).
 
