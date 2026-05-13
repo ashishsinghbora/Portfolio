@@ -167,20 +167,9 @@ main {
 
 .fill {
     height: 100%;
+    width: var(--fill-level, 0%);
     border-radius: 999px;
     background: linear-gradient(90deg, #3b82f6, #22d3ee);
-}
-
-.fill-82 {
-    width: 82%;
-}
-
-.fill-88 {
-    width: 88%;
-}
-
-.fill-84 {
-    width: 84%;
 }
 
 .project-list {
