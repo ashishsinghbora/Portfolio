@@ -146,6 +146,31 @@ main {
     font-size: 0.9rem;
 }
 
+.skill-bars {
+    margin-top: 16px;
+    display: grid;
+    gap: 10px;
+}
+
+.skill-row span {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+.bar {
+    margin-top: 6px;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.2);
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #3b82f6, #22d3ee);
+}
+
 .project-list {
     list-style: none;
     display: grid;
@@ -157,6 +182,12 @@ main {
     border-radius: 12px;
     background: rgba(30, 41, 59, 0.8);
     border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.project-meta {
+    margin: 6px 0;
+    color: #93c5fd;
+    font-size: 0.9rem;
 }
 
 a {
