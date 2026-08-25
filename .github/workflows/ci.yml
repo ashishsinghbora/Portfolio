@@ -1,0 +1,31 @@
+name: CI Test & Build Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test-and-build:
+    name: Test & Build Suite
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Vitest Unit Tests (Security & CLI)
+        run: npm run test
+
+      - name: Verify Next.js Production Build
+        run: npm run build

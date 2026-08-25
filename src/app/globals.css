@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #08090d;
+  --panel-bg: #0d1017;
+  --text-main: #e2e8f0;
+  --text-muted: #64748b;
+  --accent: #00f0ff;
+  --accent-glow: rgba(0, 240, 255, 0.35);
+  --border-color: rgba(0, 240, 255, 0.25);
+  --card-bg: rgba(13, 16, 23, 0.75);
+}
+
+[data-theme="cyber"] {
+  --bg-color: #08090d;
+  --panel-bg: #0d1017;
+  --text-main: #e2e8f0;
+  --text-muted: #64748b;
+  --accent: #00f0ff;
+  --accent-glow: rgba(0, 240, 255, 0.35);
+  --border-color: rgba(0, 240, 255, 0.25);
+  --card-bg: rgba(13, 16, 23, 0.85);
+}
+
+[data-theme="matrix"] {
+  --bg-color: #030804;
+  --panel-bg: #061408;
+  --text-main: #d1fae5;
+  --text-muted: #059669;
+  --accent: #00ff66;
+  --accent-glow: rgba(0, 255, 102, 0.4);
+  --border-color: rgba(0, 255, 102, 0.3);
+  --card-bg: rgba(4, 18, 7, 0.85);
+}
+
+[data-theme="dracula"] {
+  --bg-color: #161622;
+  --panel-bg: #1e1e2e;
+  --text-main: #f8f8f2;
+  --text-muted: #6272a4;
+  --accent: #bd93f9;
+  --accent-glow: rgba(189, 147, 249, 0.4);
+  --border-color: rgba(189, 147, 249, 0.3);
+  --card-bg: rgba(30, 30, 46, 0.85);
+}
+
+[data-theme="nord"] {
+  --bg-color: #242933;
+  --panel-bg: #2e3440;
+  --text-main: #eceff4;
+  --text-muted: #d8dee9;
+  --accent: #88c0d0;
+  --accent-glow: rgba(136, 192, 208, 0.4);
+  --border-color: rgba(136, 192, 208, 0.3);
+  --card-bg: rgba(46, 52, 64, 0.85);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Custom Scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* CRT Scanline Overlay Effect */
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+/* Glow effects */
+.glow-accent {
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.text-glow {
+  text-shadow: 0 0 10px var(--accent-glow);
+}
